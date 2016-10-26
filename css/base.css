@@ -1,0 +1,28 @@
+/********************************************************************/
+/* Positioning classes, author: Fredrik Larsson */
+/********************************************************************/
+
+.span-12 {
+    float: left;
+    width: 100%;
+}
+
+.span-8 {
+    float: left;
+    width: 66%;
+}
+
+.span-6 {
+    float: left;
+    width: 50%;
+}
+
+.span-4 {
+    float: left;
+    width: 33%;
+}
+
+.span-3 {
+    float: left;
+    width: 25%;
+}
