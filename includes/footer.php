@@ -25,8 +25,8 @@
 	  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
 	  crossorigin="anonymous"></script>
 	<!-- Get jQueryUI from CDN -->
-	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<!--<script src="js/jquery.backstretch.min.js"></script>-->
+	<!--<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
