@@ -19,8 +19,9 @@ $(document).ready(function(){
 	});
 });
 
-/* active class to menu on load & scroll *********************************************/
 
+
+/* active class to menu on load & scroll *********************************************/
 
 activeMenu = function() {
 
@@ -32,6 +33,21 @@ activeMenu = function() {
 	var portfolio = $("#portfolio").offset().top-h;
 	var y = $(window).scrollTop();
 
+
+	// Set bg color-fade
+	var slow = y * 2;
+	var fast = y * 4;
+	var green = 255 - slow;
+	var red = 255 - fast;
+	if ( red <= 6 ) { red = 6 }
+	if ( green > 255 ) { green = 255 }
+	if ( green <= 6 ) { green = 6 }
+	var blue = green;
+	red = green;
+
+	$("#home, #about").css("background", "rgb(" + red + "," + green + "," + blue + ")");
+
+	// Active class on scroll
 	// Activate "home"
 	if(y < about){
 	    $("#home-link").addClass("active");
@@ -52,6 +68,25 @@ activeMenu = function() {
 	} else {
 		$("#portfolio-link").removeClass("active");
 	}
+
+
+	// Fade in/out angle icons
+	// Home section
+	if ($(document).scrollTop() > 110){
+		$(".fade-pointer-home").fadeOut(250);
+	} else {
+		$(".fade-pointer-home").fadeIn(250);
+	}
+
+	// About section
+	var a = $("#about").offset().top+300;
+	var stop = $(window).scrollTop();
+
+	if (stop > a){
+		$(".fade-pointer-about").fadeOut(250);
+	} else {
+		$(".fade-pointer-about").fadeIn(250);
+	}
 }
 
 // Add eventlisteners on load & scroll to activeMenu-function
@@ -63,6 +98,8 @@ $(function() {
 		window.addEventListener("scroll", activeMenu);
 	}
 });
+
+
 
 /* scroll for devices viewport width < 430px *************************************/
 
@@ -81,17 +118,6 @@ $(function(){
 	}
 });
 
-/* fade in pitch *****************************************************************/
-
-$(document).ready(function (){
-	
-	if(window.innerWidth < 800){
-		$("#bgvid").hide();
-		/*$("#home").css("background", "#E8E8E8");*/
-	} else {
-		$("#bgvid").delay(15300).fadeOut(10000);
-	}
-});
 
 
 /* toggle menu ********************************************************************/
@@ -120,48 +146,6 @@ showHideMenu = function() {
 }
 
 
-/* fade out pitch and scroll-pointer-links on scroll *******************************/
-
-$(document).ready(function(){
-	$(window).scroll(function(){
-
-		if ($(document).scrollTop() > 110){
-			$("#pitch-home, .fade-pointer-home").fadeOut(250);
-		} else {
-			$("#pitch-home, .fade-pointer-home").fadeIn(250);
-		}
-	});
-});
-
-$(document).ready(function(){
-	if($("#about").length) {
-	$(window).scroll(function(){
-		
-		var a = $("#about").offset().top+300;
-		var stop = $(window).scrollTop();
-
-		if (stop > a){
-			$(".fade-pointer-about").fadeOut(250);
-		} else {
-			$(".fade-pointer-about").fadeIn(250);
-		}
-	});
-	}
-});
-
-$(document).ready(function(){
-	$(window).scroll(function(){
-
-		if(window.innerWidth > 430){
-
-            if ($(document).scrollTop() > 5){
-                $(".portfolio-pitch-holder").fadeOut(250);
-            } else {
-                $(".portfolio-pitch-holder").fadeIn(250);
-            }
-        }
-	});
-});
 
 /* scroll link *********************************************************************/
 
@@ -188,30 +172,26 @@ $(function(){
 
 });
 
+
 /* Hover effect on back link and close link ****************************************/
 
-	function backLinkHover(){
+function backLinkHover(){
 
-		$(".pointer-change").html(" &lt; ");
-	}
+	$(".pointer-change").html(" &lt; ");
+}
 
-	function backLinkStopHover() {
-		$(".pointer-change").html(" &gt; ");
-	}
+function backLinkStopHover() {
+	$(".pointer-change").html(" &gt; ");
+}
 
 
 /* Close portfolio item **************************************************************/
 
-	function closePage() {
-		$("#portfolio-target-container").slideUp(400).html("");
-		$("#portfolio-target-container").css({"margin-bottom": "0px"});
-	}
+function closePage() {
+	$("#portfolio-target-container").slideUp(400).html("");
+	$("#portfolio-target-container").css({"margin-bottom": "0px"});
+}
 
-/* Add fancybox selector *****************************************/
-
-$(function(){
-	$("a.fancy").fancybox();
-});
 
 /* get height of menu-bar and portfolioitems *****************************************/
 
@@ -238,14 +218,15 @@ $(function(){
 
 	$(".portfolio-item").on('click', function(){
 
-		if ($(this).hasClass("portfolio-item-active")) {
-			$(this).removeClass("portfolio-item-active");
-		} else {
+		if (!$(this).hasClass("portfolio-item-active")) {
 		
 			$(".portfolio-item").removeClass("portfolio-item-active");
+			
 			$(".portfolio-item i").show();
-			$(this).addClass("portfolio-item-active");
-			$("i.fa-arrow-circle-down", this).hide();
+			$(this).delay(500).addClass("portfolio-item-active", function(){
+				$("body, html").animate({ scrollTop: $(this).offset().top}, 450);
+			});
+			$("i.fa-angle-down", this).hide();
 		}
 	});
 });
@@ -261,3 +242,48 @@ portfolioItemWidth = function(){
 
 window.addEventListener('load', menuHeight, false);
 window.addEventListener('resize', menuHeight, false);
+
+
+
+/* Open img class "pop" blank *********************************************************/
+
+$(function(){
+
+	$(".pop").on("click", function( e ){
+
+		e.preventDefault();
+
+		var src = $(this).attr("href");
+
+		var imgPopUp = '<div class="imgPopUp" onclick="closeImgPopUp()"><i class="fa fa-times" aria-hidden="true"></i><img class="vh-middle" src="' + src + '" alt="Portfolio image" /></div>';
+		
+		$(".imgPopUp").remove();
+		$("body").append( imgPopUp );
+		$(".imgPopUp").animate({ "opacity": 1 }, 250);
+
+	});
+
+	$(".imgPopUp").on("click", function(){
+
+		$(".imgPopUp").remove();
+
+	});
+});
+
+function closeImgPopUp() {
+
+		$(".imgPopUp").animate({ "opacity": 0 }, 250, function(){
+			$(".imgPopUp").remove();
+		});
+	}
+
+
+
+
+
+
+
+
+
+
+

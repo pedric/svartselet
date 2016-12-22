@@ -26,8 +26,6 @@
     float: left;
     width: 25%;
 }
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
-
 
 /********************************************************************/
 /* CSS for "Svartselet" - author: Fredrik Larsson */
@@ -72,6 +70,13 @@ video { display: block; } /* if IE < 9 */
     color: #060616;
 }
 
+.vh-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
 /* HEADER
 ---------------------------------------------------------*/
 header {
@@ -99,7 +104,7 @@ header {
 div#menu-icon-container {
     position: fixed;
     z-index: 12;
-    width: 101px;
+    width: 93px;
     height: 93px;
     background-color: #060606;
     border-bottom-right-radius: 100%;
@@ -107,8 +112,8 @@ div#menu-icon-container {
 
 i#menu-icon {
     position: relative;
-    top: 5px;
-    left: 20px;
+    top: 7px;
+    left: 15px;
     font-size: 54px;
     color: #fff;
     transition: color 0.2s ease-in-out;
@@ -127,7 +132,7 @@ div#menu-icon-container:hover {
 }
 
 div#menu-icon-container:hover i#menu-icon {
-	color: #8A8A8B;
+	color: #252525;
 }
 
 i#menu-icon-arrow:hover {
@@ -165,7 +170,7 @@ ul {
 }
 
 .menu-post a:hover {
-	color: #8A8A8B;
+	color: #252525;
 	font-size: 155%;
 	font-weight: 700;
 }
@@ -177,7 +182,7 @@ ul {
 a.active {
 	font-weight: 700;
 	text-decoration: underline;
-	color: #8A8A8B;
+	color: #252525;
 }
 
 /* MENU-PORTFOLIO */
@@ -220,20 +225,20 @@ a.active-portfolio {
 div#lang-alt-container {
     position: absolute;
     top: 7px;
-    right: 13px;
+    left: 7px;
     z-index: 2;
 }
 
 div#lang-alt-container > a {
-    background-color: #fff;
-	color: #000;
+    background-color: transparent;
+	color: #fff;
 	font-size: 70%;
 	padding: 0 3px 2px;
-    transition: background-color 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 div#lang-alt-container > a:hover {
-    background-color: #8A8A8B;
+    color: #252525;
 }
 
 div#content {
@@ -319,7 +324,7 @@ i.icon-me {
 }
 
 i.icon-me:hover {
-	color: #8A8A8B;
+	color: #252525;
 }
 
 p#footer {
@@ -336,15 +341,6 @@ p#footer {
 #home {
 	position: relative;
 	height: 100vh;
-
-    background: rgba(0,0,0,0.84);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.84) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0,0,0,0.84)), color-stop(100%, rgba(0,0,0,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.84) 0%, rgba(0,0,0,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.84) 0%, rgba(0,0,0,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.84) 0%, rgba(0,0,0,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0.84) 0%, rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
 }
 
 video#bgvid { 
@@ -438,15 +434,13 @@ i#scroll-pointer-about {
 section#about {
 	position: relative;
 	height: auto;
-	min-height: 90vh;
-	padding-top: 100px;
+	min-height: 70vh;
 	-webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;
-    background-color: #060606;
 }
 
 #heading-about {
@@ -456,6 +450,15 @@ section#about {
     text-rendering: geometricPrecision;
     font-weight: 900;
     margin: 3px 0 0 90px;
+}
+
+#text-about {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 760px;
 }
 
 /* image area */
@@ -489,24 +492,9 @@ p#my-name {
     letter-spacing: 1px;
 }
 
-p#short-about-me {
-    display: inline-block;
-    color: #E6E6E6;
-    background-color: #000;
-    padding: 2px 5px 4px;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-}
-
 /* text area */
 .full-container {
     width: 100%;
-}
-
-.about-text {
-    width: 81%;
-    max-width: 530px;
-    margin: 60px 0 80px 90px;
 }
 
 h3.h3-about {
@@ -518,12 +506,10 @@ h3.h3-about {
 }
 
 p.p-about {
-	color: #E6E6E6;
-    font-size: 125%;
-    line-height: 1.35em;
+	color: #fff;
+    font-size: 1.1em;
     font-weight: 300;
     letter-spacing: 0.01em;
-    margin-bottom: 55px;
 }
 
 p.p-about-news {
@@ -567,7 +553,7 @@ span.highlight-contact {
 }
 
 .mail-link:hover {
-	color: #8A8A8B;
+	color: #252525;
 }
 
 /* PORTFOLIO
@@ -647,8 +633,8 @@ section#portfolio {
     margin: 0;
     max-height: 290px;
     overflow: hidden;
-    border-bottom: 1px solid #a2a2a2;
-    padding: 0 6%;
+    padding: 30px 6% 0;
+    opacity: 1;
 
     -webkit-box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
     -moz-box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
@@ -664,8 +650,13 @@ section#portfolio {
     transition: all 0.5s ease;
 }
 
+.portfolio-item:first-child {
+    box-shadow: none;
+}
+
 .portfolio-item-active {
     max-height: 1500px !important;
+    opacity: 1 !important;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -694,10 +685,13 @@ section#portfolio {
     transition: all 0.2s ease-in-out;
 }
 
-.portfolio-item:hover .show-item-icon {
-	color: rgba(0, 0, 0, 0.89);
-	font-size: 390%;
-}
+    .portfolio-item:hover {
+        opacity: 0.9;
+    }
+
+    .portfolio-item:hover .show-item-icon {
+    	font-size: 390%;
+    }
 
 #portfolio-indicator {
 	display: inline;
@@ -769,6 +763,96 @@ a.view-project-button:hover {
 	background-color: #0C0C0C;
 }
 
+/* Responsive videoelements */
+
+#video-player-container {
+    max-width: 650px;
+    margin: 25px auto 0;
+    position: relative;
+    height: 500px;
+}
+
+#video-player-container div:nth-child(1) {
+    position: absolute;
+    padding: 9% 2%;
+    top: 7%;
+    left: 3%;
+    width: 84.5%;
+    height: 79%;
+    z-index: 0;
+}
+
+#video-player-container div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    width: 69.5%;
+    height: 73%;
+    z-index: 0;
+    border-top-left-radius: 1% 50%;
+    border-bottom-left-radius: 1% 50%;
+    border-top-right-radius: 1% 50%;
+    border-bottom-right-radius: 1% 50%;
+}
+
+/* Popup images */
+.imgPopUp {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0.8+0,1+100 */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 1%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 1%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 1%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.imgPopUp > div {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imgPopUp img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.imgPopUp i {
+    position: absolute;
+    top: 9px;
+    left: 22px;
+    font-size: 44px;
+}
+
+@media screen and (max-width:600px) {
+    .imgPopUp img {
+        width: 95%;
+    }
+}
+
 /* FOOTER
 --------------------------------------------------*/
 section#bottom {
@@ -795,6 +879,11 @@ div#fb-buttons {
 .tweet-linkedin-button {
     position: relative;
     top: 3px;
+}
+
+#footer-text-container {
+    margin-left: 5%;
+    padding-top: 60px;
 }
 
 /* LOGIN-PAGE AND FORM
@@ -1041,7 +1130,7 @@ p.error-msg {
 	}
 
 	section#about {
-        min-height: 120vh;
+        min-height: 100vh;
     }
 
     .portfolio-item-img {
