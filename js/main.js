@@ -227,6 +227,7 @@ $(function(){
 				$("body, html").animate({ scrollTop: $(this).offset().top}, 450);
 			});
 			$("i.fa-angle-down", this).hide();
+
 		}
 	});
 });
@@ -279,11 +280,20 @@ function closeImgPopUp() {
 
 
 
+/* Change "tape" in videoplayer *********************************************************/
 
+function changeTape(tape) {
 
+	var tapes = {
+		1 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/xBKZg3QuhV0?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+		2 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/ID9Ird8GQs8?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+		3 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/rvUvPHTW6lM?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+		4 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/_A1Xs8jbd5s?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',
+		5 : '<iframe width="560" height="315" src="https://www.youtube.com/embed/3dASiGzbqVQ?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>'
+	};
 
+	var playThis = tapes[tape];
 
-
-
-
-
+	$("#changeTape").html(playThis);
+	
+}

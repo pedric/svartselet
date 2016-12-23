@@ -25,13 +25,13 @@
 					<?php if(isset($eng)) { ?>
 
 					<p class="p-about">
-						<span class="first-word">*Svartselet</span> is a calm water in the river Lofsån which peacefully runs by. It's also a <span class="highlight">creative studio</span> in Glöte, Härjedalen. Svartselet Studio focuses on <span class="highlight">web productions</span> but also works with <span class="highlight">design, graphic, photography, video, artistic projects</span> etc.
+						<span class="first-word">*Svartselet</span> is a <span class="highlight">creative studio</span> in Glöte, Härjedalen. Svartselet Studio focuses on <span class="highlight">web productions</span> but also works with <span class="highlight">design, graphic, photography, video, artistic projects</span> etc.
 					</p>
 
 					<?php } else { ?>
 
 					<p class="p-about">
-						<span class="first-word">*Svartselet</span> är ett lugn som sakta rinner förbi. Det är även en <span class="highlight">kreativ studio</span> i Glöte, Härjedalen. Svartselet Studio skapar <span class="highlight">produktion för webb</span> men även <span class="highlight">design, grafik, fotografi, film, konstnärliga projekt</span> etc.
+						<span class="first-word">*Svartselet</span> är en <span class="highlight">kreativ studio</span> i Härjedalen. Produktion för <span class="highlight">webb, design, grafik, fotografi, film, konstnärliga projekt</span> etc.
 					</p>
 
 					<?php } ?>
