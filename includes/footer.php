@@ -3,18 +3,16 @@
 			<div id="about-hole">
 				<div id="footer-text-container">
 					<i class="fa fa-paper-plane fa-2x" style="margin: 0 0 9px 5px;"></i>
-					<p class="p-about-news"><span class="highlight-contact">Svartselet</span></p>
-					<p class="p-about-news"><span class="highlight">Glöte 410</span></p>
-					<p class="p-about-news"><span class="highlight">842 91 Sveg</span></p><br />
-					<p class="p-about-news"><span class="highlight">070 297 87 01</span></p><br />
-					<p class="p-about-news"><a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a></p><br />
+					<p class="p-about-news"><span class="highlight-contact">Fredrik Larsson</span></p>
+					<p class="p-about-news"><span class="highlight-contact">070 297 87 01</span></p>
+					<p class="p-about-news"><a class="mail-link" href="mailto:epost.larsson@gmail.com">epost.larsson@gmail.com</a></p><br />
 					<a href="https://www.instagram.com/svartselet" target="_blank" rel="external" style="margin-right:10px;"><i class="fa fa-instagram fa-2x icon-me"></i></a>
 					<a href="https://www.facebook.com/svartselet" target="_blank" rel="external" style="margin-right:10px;"><i class="fa fa-facebook-square fa-2x icon-me"></i></a>
 					<a href="https://se.linkedin.com/svartselet" target="_blank" rel="external"><i class="fa fa-linkedin-square fa-2x icon-me"></i></a>
 				</div>
 			</div>
 			<div>
-				<p id="bottom-c">©2016svartselet.se</p>
+				<p id="bottom-c">©2017 Fredrik Larsson</p>
 			</div>
 			</div>
 		</section>

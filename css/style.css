@@ -353,7 +353,8 @@ div#pitch-home {
 	position: relative;
 	width: 90%;
 	top: 50%;
-    margin: -132.5px auto;
+    left: 50%;
+    transform: translateY(-50%)translateX(-50%);
 }
 
 h2#h2-home {
@@ -375,7 +376,6 @@ span#pitch-home-inline {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 47px;
-    margin: 0 0 0 -10px;
     text-rendering: initial;	
 }
 
@@ -410,6 +410,7 @@ section#about {
 	position: relative;
 	height: auto;
 	min-height: 70vh;
+    padding: 50px 0 100px;
 	-webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -428,10 +429,8 @@ section#about {
 }
 
 #text-about {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 0;
+    margin: 0 auto;
     width: 90%;
     max-width: 430px;
 }
@@ -485,6 +484,8 @@ p.p-about {
     font-size: 1.1em;
     font-weight: 300;
     letter-spacing: 0.01em;
+    line-height: 1.4;
+    margin: 20px auto 0;
 }
 
 p.p-about-news {
@@ -502,6 +503,11 @@ p.date {
     font-weight: 300;
     font-style: italic;
     margin-bottom: 150px;
+}
+
+p.p-about > span {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 span.first-word {
@@ -896,9 +902,6 @@ p.error-msg {
 /* RESPONSIVE
 --------------------------------------------------*/
 @media screen and (max-width: 1270px){
-	div#pitch-home {
-    margin: -121px auto;
-}
 
 	h2#h2-home {
 		font-size: 166px;
@@ -906,10 +909,6 @@ p.error-msg {
 }
 
 @media screen and (max-width: 1060px){
-	div#pitch-home {
-    	top: 50%;
-    	margin: -114px auto;
-	}
 
 	h2#h2-home {
 		font-size: 154px;
@@ -949,10 +948,6 @@ p.error-msg {
 
 	.hide-big-screen {
 		display: inline;
-	}
-
-	div#pitch-home {
-    	margin: -89px auto;
 	}
 
 	h2#h2-home {
@@ -997,10 +992,6 @@ p.error-msg {
 		font-size: 44px;
 	}
 
-	div#pitch-home {
-    	margin: -72.5px auto;
-	}
-
 	h2#h2-home {
 		font-size: 100px;
 	}
@@ -1022,9 +1013,6 @@ p.error-msg {
 }
 
 @media screen and (max-width: 600px){
-	div#pitch-home {
-	    margin: -54.5px auto;
-	}
 
 	h2#h2-home {
 		font-size: 70px;
@@ -1081,10 +1069,6 @@ p.error-msg {
 	{
     	width: 90%;
     	background-size: 100%;
-	}
-
-	div#pitch-home {
-    	margin: -54.5px auto;
 	}
 
 	h2#h2-home {
@@ -1206,10 +1190,6 @@ p.error-msg {
 	.heading-portfolio-back,
 	.heading-portfolio-back-active {
     	font-size: 19px;
-	}
-
-	div#pitch-home {
-    	margin: -40px auto;
 	}
 
 	h2#h2-home {

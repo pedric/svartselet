@@ -14,6 +14,6 @@ $page_title = "Svartselet.";
 ---------------------------------------------------------------------*/
 function footer(){
     $year = date("Y");
-    echo "<p id='footer'>©" . $year . "svartselet.se</p>";
+    echo "<p id='footer'>©" . $year . " Fredrik Larsson</p>";
 }
 ?>
