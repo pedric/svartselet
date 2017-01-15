@@ -44,7 +44,7 @@
 
 					<img src="img/fredriklarsson.jpg" style="width: 100%;" alt="Portrait of Fredrik Larsson" />
 					<p class="p-about">
-						<span>*Jag söker just nu ett företag att samarbeta med för att utföra projektarbete på B-nivå inom webb.</span>
+						<span>*Just nu söker jag ett företag att samarbeta med för att utföra projektarbete på B-nivå inom webb.</span>
 					</p>
 					<p class="p-about">
 						 Kursen ingår som avslutande moment på programmet Webbutveckling 120hp som jag läser på distans mot Mittuniversitetet. Upplägget av projektarbetet är flexibelt och kan utformas efter bådas behov, det är alltså en bra chans för er att få in en extra resurs och för mig att skaffa mer erfarenhet.
