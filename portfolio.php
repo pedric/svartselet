@@ -159,7 +159,7 @@
 		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-9.png" alt="#" />
+			<img src="img/portfolio-object-9.png" alt="#" style="max-width: 600px;" />
 		</div>
 
 		<div class="portfolio-item-text">
@@ -175,6 +175,35 @@
 			<?php } else { ?>
 
 			App byggd med MEAN-stacken, universitetsprojekt för kursen "Javascriptsbaserad Webbutveckling". Går att testköra <a href="https://larsson-postcardapp.herokuapp.com/">här</a>
+
+			<?php } ?>
+			</p>
+		</div>
+
+	</div>
+
+
+	<!-- Item -->
+	<div class="portfolio-item white" style="background-color: #000;">
+		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+
+		<div class="portfolio-item-img">
+			<img src="img/portfolio-object-10.png" alt="#" style="max-width: 600px;" />
+		</div>
+
+		<div class="portfolio-item-text">
+			<h3 class="h3-portfolio white">Hildings Krog</h3>
+			<p class="involvement white">
+				<?php if(isset($eng)) {echo "WordPress";} else {echo "WordPress";} ?>
+			</p>
+			<p class="portfolio-bread white" style="margin-bottom: 50px;">
+				<?php if(isset($eng)) { ?>
+
+			WordPress theme for the bar &amp; kitchen Hildings Krog, published at <a href="http://www.hildingskrog.se/">hildingskrog.se</a>.</a>
+
+			<?php } else { ?>
+
+			WordPress-tema för restaurangen Hildings Krog, publicerad på <a href="http://www.hildingskrog.se/">hildingskrog.se</a>.
 
 			<?php } ?>
 			</p>
