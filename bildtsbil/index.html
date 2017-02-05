@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lattjo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+</head>
+<body>
+
+<style>
+
+	html {
+		width: 100vw;
+		height: 100vh;
+		background-color: #3645ff;
+	}
+
+	#curtain {
+		position: absolute;
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #ff3636;
+		z-index: -1;
+		opacity: 1;
+		transition: all 0.8s ease-in-out;
+	}
+
+	body {
+		position: relative;
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#ball {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%)translateY(-50%)rotate(0deg);
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+
+		background-image: url(https://images.interactives.dk/140409_07_bil-0oMyUS9MERbOwI9CtM4z9Q.jpg);
+		background-position: center;
+		background-size: cover;
+
+		transition: all 0.8s ease-in-out;
+	}
+
+	#rubby:hover ~ #ball {
+		transform: translateX(-50%)translateY(-50%)rotate(360deg);
+		background-image: url(http://gfx.aftonbladet-cdn.se/image/15451606/642/normal/f7224d6010ec9/bildt2.jpg);
+	}
+
+	#rubby:hover ~ #curtain {
+		opacity: 0;
+	}
+
+	/* Headings */
+
+	.htwos {
+		font-family: 'Kanit', sans-serif;
+		font-weight: 900;
+		font-size: 55px;
+		text-align: center;
+		color: #fff;
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: all 0.6s ease-in-out;
+	}
+
+	#bildt {
+		opacity: 0;
+	}
+
+	#rubby:hover ~ #bil {
+		opacity: 0;
+	}
+
+	#rubby:hover ~ #bildt {
+		opacity: 1;
+	}
+
+	#winner {
+		opacity: 0;
+	}
+
+	/* Control */
+
+	#rubby {
+		width: 90px;
+		height: 90px;
+		background-color: yellow;
+		border-radius: 50%;
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		transform: translateX(-50%)translateY(-50%);
+		transition: all 0.1s ease-in-out;
+	}
+
+	#rubby:hover {
+		width: 87px;
+		height: 87px;
+	}
+
+	#rubby > p {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translateX(-50%)translateY(-50%)rotate(-18deg);
+	    font-family: 'Kanit', sans-serif;
+	    text-align: center;
+	    color: #333333;
+	    font-weight: 900;
+	    font-size: 18px;
+	    margin: 0;
+	}
+
+</style>
+
+<div id="rubby" onmouseover="bounce()"><p>Gnugga mig!</p></div>
+
+<div id="ball"></div>
+<div id="curtain"></div>
+
+<h2 class="htwos" id="bil">Bil.</h2>
+<h2 class="htwos" id="bildt">Bildt.</h2>
+<h2 class="htwos" id="winner">Du vann!<br />Bildts bil är borta.</h2>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script>
+	
+$(function() {
+	$("#ball").on('mouseenter', function() {
+		$("body").animate({ background : "rgb(3,3,3)" });
+	});
+});
+
+var gameEnd = function() {
+	$("#bil, #bildt, #ball").hide();
+	$("#winner").animate({ opacity : 1 }, 200);
+}
+
+var gameControl = function() {
+
+	var windowHeight = $(window).height();
+	var distance = $("#ball").offset().top;
+	
+	if (distance > windowHeight) {
+		gameEnd();
+	}
+}
+
+var bounce = function() {
+	$("#ball").animate({ top : "50%" }, 30, function() {
+		$("#ball").animate({ top : "50%" }, 100, function() {
+			/*$("#ball").animate({ top : "45%" }, 200, function() {
+				$("#ball").animate({ top : "47%" }, 100, function() {
+					$("#ball").animate({ top : "49%" }, 30, function() {
+				
+					});
+				});
+			});*/
+		});
+	});
+
+	gameControl();
+}
+
+</script>
+</body>
+</html>
