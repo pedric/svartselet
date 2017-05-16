@@ -37,10 +37,10 @@
 					</p>
 					<p class="p-about">
 						<a href="pdf/CV-Fredrik_Larsson.pdf">CV, Fredrik Larsson (pdf, Swedish)</a><br />
-						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf, Swedish)</a>
-						<a href="https://github.com/pedric">Github</a>
-						<a href="https://www.facebook.com/svartselet">Facebook</a>
-						<a href="https://www.instagram.com/svartselet">Instagram</a>
+						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf, Swedish)</a><br />
+						<a href="https://github.com/pedric">Github</a><br />
+						<a href="https://www.facebook.com/svartselet">Facebook</a><br />
+						<a href="https://www.instagram.com/svartselet">Instagram</a><br />
 						<a href="https://se.linkedin.com/svartselet">LinkedIn</a>
 					</p>
 
@@ -58,10 +58,10 @@
 					</p>
 					<p class="p-about" style="font-weight: normal;">
 						<a href="pdf/CV-Fredrik_Larsson.pdf">CV, Fredrik Larsson (pdf)</a><br />
-						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf)</a>
-						<a href="https://github.com/pedric">Github</a>
-						<a href="https://www.facebook.com/svartselet">Facebook</a>
-						<a href="https://www.instagram.com/svartselet">Instagram</a>
+						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf)</a><br />
+						<a href="https://github.com/pedric">Github</a><br />
+						<a href="https://www.facebook.com/svartselet">Facebook</a><br />
+						<a href="https://www.instagram.com/svartselet">Instagram</a><br />
 						<a href="https://se.linkedin.com/svartselet">LinkedIn</a>
 					</p>
 
