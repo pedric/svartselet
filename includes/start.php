@@ -35,7 +35,7 @@
 						See documents, resources and portfolio below.<br />
 						Regards, Fredrik Larsson
 					</p>
-					<p class="p-about">
+					<p class="p-about" style="font-weight: normal;">
 						<a href="pdf/CV-Fredrik_Larsson.pdf">CV, Fredrik Larsson (pdf, Swedish)</a><br />
 						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf, Swedish)</a><br />
 						<a href="https://github.com/pedric">Github</a><br />
