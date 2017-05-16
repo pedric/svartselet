@@ -335,7 +335,9 @@ function setHeadingSize() {
     }
 }
 
-setHeadingSize()
+window.addEventListener('load', function() {
+    setHeadingSize()
+});
 window.addEventListener('resize', function() {
     setHeadingSize()
 });
