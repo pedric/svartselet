@@ -109,7 +109,7 @@ $(function(){
 	if(window.innerWidth < 510){
 
 		$(".menu-post a").click(function(){
-			$("#menu-bar").toggle("slide", 500);
+			$("#menu-bar").toggle("slide", 200);
             if($("#menu-icon").hasClass("fa-bars")){
                 $("#menu-icon").fadeOut(100).switchClass("fa-bars", "fa-times").fadeIn(100);
             } else {
