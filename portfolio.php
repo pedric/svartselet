@@ -8,7 +8,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background: rgb(204, 79,42);">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-7.png" alt="#" />
@@ -43,7 +43,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background-image: url(img/portfolio/object-6-bg.jpg)">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-6.jpg" alt="#" />
@@ -76,7 +76,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background: #29367a;">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-3.png" alt="#" />
@@ -113,7 +113,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background: transparent;">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div id="video-player-container">
 			<div></div>
@@ -156,7 +156,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background-color: #f14ab6; /*background-image: url(img/portfolio/object-9-bg.jpg); background-position: top center;*/">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-9.png" alt="#" style="max-width: 600px;" />
@@ -185,7 +185,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item white" style="background-color: #000;">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-10.png" alt="#" style="max-width: 600px;" />
@@ -214,7 +214,7 @@
 
 	<!-- Item -->
 	<div class="portfolio-item black" style="background: #fff;">
-		<i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i>
+		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
 			<img src="img/portfolio-object-4.jpg" alt="#" />

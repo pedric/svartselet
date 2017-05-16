@@ -15,9 +15,9 @@
 			</ul>
 		</nav>
 		<div id="portrait-container">
-			<img src="img/layout/header-image.jpg" alt="#" />			
+			<img src="img/fredriklarsson1x1.jpg" alt="#" />			
 			<div id="text-me">
-				<p><a class="mail-link" href="mailto:epost.larsson@gmail.com">epost.larsson@gmail.com</a></p>
+				<p><a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a></p>
 				<div id="icons">
 					<a href="https://www.instagram.com/svartselet" target="_blank"><i class="fa fa-instagram icon-me"></i></a>
 					<a href="https://www.facebook.com/svartselet" target="_blank"><i class="fa fa-facebook-square icon-me"></i></a>

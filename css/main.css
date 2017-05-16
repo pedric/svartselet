@@ -79,8 +79,8 @@ header {
 div#menu-icon-container {
     position: fixed;
     z-index: 12;
-    width: 93px;
-    height: 93px;
+    width: 77px;
+    height: 77px;
     background-color: #060606;
     border-bottom-right-radius: 100%;
 }
@@ -89,7 +89,7 @@ i#menu-icon {
     position: relative;
     top: 7px;
     left: 15px;
-    font-size: 54px;
+    font-size: 44px;
     color: #fff;
     transition: color 0.2s ease-in-out;
 }
@@ -357,6 +357,18 @@ div#pitch-home {
     transform: translateY(-50%)translateX(-50%);
 }
 
+div#pitch-home > h2 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    display: table;
+    font-size: 48px;
+    text-decoration: none;
+    color: #0C0C0C;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 auto;
+}
+
 h2#h2-home {
     text-transform: uppercase;
     font-size: 204px;
@@ -429,7 +441,7 @@ section#about {
 }
 
 #text-about {
-    padding: 0;
+    padding: 100px 0;
     margin: 0 auto;
     width: 90%;
     max-width: 430px;
@@ -612,7 +624,7 @@ section#portfolio {
 .portfolio-item {
     position: relative;
     margin: 0;
-    max-height: 290px;
+    /*max-height: 290px;*/
     overflow: hidden;
     padding: 30px 6% 0;
     opacity: 1;
@@ -666,13 +678,13 @@ section#portfolio {
     transition: all 0.2s ease-in-out;
 }
 
-    .portfolio-item:hover {
+    /*.portfolio-item:hover {
         opacity: 0.9;
     }
 
     .portfolio-item:hover .show-item-icon {
     	font-size: 390%;
-    }
+    }*/
 
 #portfolio-indicator {
 	display: inline;
