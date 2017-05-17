@@ -134,7 +134,7 @@ showHideMenu = function() {
 		}
 
 	} else {
-		$("#menu-bar").toggle("slide", 200);
+		$("#menu-bar").toggle("slide", 200, function() { setHeadingSize(); });
 		$("#content").toggleClass("menu-open", 200);
 		$("#menu-icon-container").toggleClass("menu-open", 200);
 		$(".left-twenty").toggle("slide", 200);
@@ -304,7 +304,7 @@ function changeTape(tape) {
 
 function setHeadingSize() {
 
-		var parent = document.getElementById("pitch-home");;
+		var parent = document.getElementById("pitch-home");
 		var heading = document.getElementById("fullwidth-text");
 
     var fontSize = parseFloat(window.getComputedStyle(heading, null).getPropertyValue('font-size'));

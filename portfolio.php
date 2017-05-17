@@ -20,7 +20,7 @@
 				<?php if(isset($eng)) {echo "Graphic design / Logo / Website / Wordpress";} else {echo "Formgivning / Logo / Webbplats / Wordpress";} ?>
 			</p>
 			<p class="portfolio-bread hidden">
-				<?php if(isset($eng)) {echo "Logo, graphic design and development of Wordpress-theme for Walko.";} else {echo "Logotyp, färg– och formgivning för samt utvecklande av Wordpress–tema för Walko.";} ?>
+				<?php if(isset($eng)) {echo "Logo, design and development of Wordpress-theme for Walko.se";} else {echo "Logotyp, färg– och formgivning samt utvecklande av Wordpress–tema för Walko.se";} ?>
 			</p>
 		</div>
 
@@ -225,7 +225,7 @@
 			<p class="involvement black">
 				<?php if(isset($eng)) {echo "Art / Design / Layout";} else {echo "Konsthantverk / Design / Layout";} ?>
 			</p>
-			<p class="portfolio-bread black">
+			<p class="portfolio-bread black hidden">
 				<?php if(isset($eng)) { ?>
 
 			Coverart for print and digital release.
