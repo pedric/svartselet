@@ -46,7 +46,7 @@
 		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-6.jpg" alt="#" />
+			<a class="pop" href="img/portfolio-object-6.jpg"><img src="img/portfolio-object-6.jpg" alt="#" /></a>
 		</div>
 
 		<div class="portfolio-item-text">
@@ -79,7 +79,7 @@
 		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-3.png" alt="#" />
+			<a class="pop" href="img/portfolio-object-3.png"><img src="img/portfolio-object-3.png" alt="#" /></a>
 		</div>
 
 		<div class="portfolio-item-text" style="max-width: 610px;">
@@ -159,7 +159,7 @@
 		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-9.png" alt="#" style="max-width: 600px;" />
+			<a class="pop" href="img/portfolio-object-9.png"><img src="img/portfolio-object-9.png" alt="#" style="max-width: 600px;" /></a>
 		</div>
 
 		<div class="portfolio-item-text">
@@ -188,7 +188,7 @@
 		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-10.png" alt="#" style="max-width: 600px;" />
+			<a class="pop" href="img/portfolio-object-10.png"><img src="img/portfolio-object-10.png" alt="#" style="max-width: 600px;" /></a>
 		</div>
 
 		<div class="portfolio-item-text">
@@ -217,7 +217,7 @@
 		<!-- <i class="fa fa-angle-down fa-2x show-item-icon" aria-hidden="true"></i> -->
 
 		<div class="portfolio-item-img">
-			<img src="img/portfolio-object-4.jpg" alt="#" />
+			<a class="pop" href="img/portfolio-object-4.jpg"><img src="img/portfolio-object-4.jpg" alt="#" /></a>
 		</div>
 
 		<div class="portfolio-item-text" style="max-width: 590px;">
