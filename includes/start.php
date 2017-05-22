@@ -26,10 +26,10 @@
 					<?php if(isset($eng)) { ?>
 
 					<p class="p-about" style="margin-top: 0;">
-						<span>*May 31 I'll finish my studies in web development, 120 credits, at the Mid Sweden University.</span>
+						<span>May 31 I'll finish my studies in web development, 120 credits, at the Mid Sweden University.</span>
 					</p>
 					<p class="p-about">
-						 The first of june I'll then be available for employment at <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> or +46 70 297 87 01.<br />
+						 The first of june I'll then be available for employment. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> or +46 70 297 87 01.<br />
 					</p>
 					<p class="p-about">
 						See documents, resources and portfolio below.<br />
@@ -47,10 +47,10 @@
 					<?php } else { ?>
 
 					<p class="p-about" style="margin-top: 0;">
-						<span>*Den 31/5 redovisar- och avslutar jag mitt exjobb på programmet Webbutveckling 120hp distans, Mittuniversitetet.</span>
+						<span>Den 31/5 avslutar jag mina studier på programmet Webbutveckling 120hp vid Mittuniversitetet.</span>
 					</p>
 					<p class="p-about">
-						 Den 1/6 är jag därmed tillgänglig för arbetsmarknaden via <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> eller +46 70 297 87 01.<br />
+						 Den 1/6 finns jag tillgänglig för heltidsarbete. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> eller +46 70 297 87 01.<br />
 					</p>
 					<p class="p-about">
 						Se dokument, länkar och portfolio nedan.<br />
