@@ -50,7 +50,7 @@
 						<span>Den 31/5 avslutar jag mina studier på programmet Webbutveckling 120hp vid Mittuniversitetet.</span>
 					</p>
 					<p class="p-about">
-						 Den 1/6 finns jag tillgänglig för heltidsarbete. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> eller +46 70 297 87 01.<br />
+						 Från den 1/6 finns jag tillgänglig för heltidsarbete. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> eller +46 70 297 87 01.<br />
 					</p>
 					<p class="p-about">
 						Se dokument, länkar och portfolio nedan.<br />
