@@ -90,17 +90,37 @@ activeMenu = function() {
 	}
 }
 
+activeMenu();
+
 // Add eventlisteners on load & scroll to activeMenu-function
 $(function() {
 
 	// Check if page is scrollable
 	if($("#home").length) {
-		window.addEventListener("load", activeMenu);
-		window.addEventListener("scroll", activeMenu);
+		window.addEventListener("load", activeMenu, false);
+		window.addEventListener("scroll", activeMenu, false);
+
+		$("#fullwidth-text").delay(500).animate({"opacity": 1});
 	}
 });
 
+/* Fade in elements on scroll *************************************/
 
+window.addEventListener("scroll", function() {
+	var elements = document.getElementsByClassName('fadeMeIn');
+  
+	var windowHeight = window.innerHeight;
+  var fadeInHeight = (windowHeight / 10) * 9;
+
+  $(".fadeMeIn").each(function() {
+  	var elTop = $(this).offset().top;
+  	var fadeInPosition = $(window).scrollTop() + ($(window).height() / 10) * 8;
+
+  	if( fadeInPosition > elTop ){          
+      $(this).animate({"opacity": 1, "marginTop": "0px"});
+    }
+  });
+});
 
 /* scroll for devices viewport width < 430px *************************************/
 

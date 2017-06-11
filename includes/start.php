@@ -11,7 +11,6 @@
 			<div id="pitch-home">
 				<h2 id="fullwidth-text">Svartselet</h2>
 				<!-- <img id="heading-logo" src="img/layout/fl-heading.png" alt="Fredrik Larsson"> -->
-				<h4 class="h4-home dark-font"><?php if(isset($eng)) {echo "Web, design &amp; art";} else {echo "Webb, design &amp; konst";} ?></h4>
 			</div>
 			<a class="scroll-this fade-pointer-home" href="#about"><i id="scroll-pointer" class="fa fa-angle-down fa-4x black"></i></a>
 		</section>
@@ -25,45 +24,11 @@
 
 					<?php if(isset($eng)) { ?>
 
-					<p class="p-about" style="margin-top: 0;">
-						<span>May 31 I'll finish my studies in web development, 120 credits, at the Mid Sweden University.</span>
-					</p>
-					<p class="p-about">
-						 The first of june I'll then be available for employment. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> or +46 70 297 87 01.<br />
-					</p>
-					<p class="p-about">
-						See documents, resources and portfolio below.<br />
-						Regards, Fredrik Larsson
-					</p>
-					<p class="p-about" style="font-weight: normal;">
-						<a href="pdf/CV-Fredrik_Larsson.pdf">CV, Fredrik Larsson (pdf, Swedish)</a><br />
-						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf, Swedish)</a><br />
-						<a href="https://github.com/pedric">Github</a><br />
-						<a href="https://se.linkedin.com/svartselet">LinkedIn</a><br />
-						<a href="https://www.facebook.com/svartselet">Facebook</a><br />
-						<a href="https://www.instagram.com/svartselet">Instagram</a>
-					</p>
+					<h4 class="h4-home dark-font fadeMeIn">Web, design &amp; art</h4>
 
 					<?php } else { ?>
 
-					<p class="p-about" style="margin-top: 0;">
-						<span>Den 31/5 avslutar jag mina studier på programmet Webbutveckling 120hp vid Mittuniversitetet.</span>
-					</p>
-					<p class="p-about">
-						 Från den 1/6 finns jag tillgänglig för heltidsarbete. <a class="mail-link" href="mailto:fredrik@svartselet.se">fredrik@svartselet.se</a> eller +46 70 297 87 01.<br />
-					</p>
-					<p class="p-about">
-						Se dokument, länkar och portfolio nedan.<br />
-						Mvh, Fredrik Larsson
-					</p>
-					<p class="p-about" style="font-weight: normal;">
-						<a href="pdf/CV-Fredrik_Larsson.pdf">CV, Fredrik Larsson (pdf)</a><br />
-						<a href="pdf/Personligt_brev-Fredrik_Larsson.pdf">Personligt brev, Fredrik Larsson (pdf)</a><br />
-						<a href="https://github.com/pedric">Github</a><br />
-						<a href="https://se.linkedin.com/svartselet">LinkedIn</a><br />
-						<a href="https://www.facebook.com/svartselet">Facebook</a><br />
-						<a href="https://www.instagram.com/svartselet">Instagram</a>
-					</p>
+					<h4 class="h4-home dark-font fadeMeIn">Webb, design &amp; konst</h4>
 
 					<?php } ?>
 
