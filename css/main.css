@@ -57,13 +57,32 @@ video { display: block; } /* if IE < 9 */
     margin-top: 100px;
 }
 
+#fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.random-fish {
+    position: fixed;
+    width: 400px;
+    height: 106px;
+
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
 /* HEADER
 ---------------------------------------------------------*/
 header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.49);
+	background-color: rgb(12, 12, 12);
 	height: 37px;
 	z-index: 10;
 }
@@ -87,7 +106,7 @@ div#menu-icon-container {
     z-index: 12;
     width: 77px;
     height: 77px;
-    background-color: #060606;
+    background-color: rgb(12, 12, 12);
     border-bottom-right-radius: 100%;
 }
 
@@ -247,7 +266,7 @@ div#content {
     left: 0;
     width: 200px;
     height: 100vh;
-    background-color: #060606;
+    background-color: rgb(12, 12, 12);
     z-index: 2;
 }
 
@@ -257,6 +276,8 @@ div#portrait-container {
     bottom: 0;
     left: 50%;
     margin-left: -100px;
+    box-sizing: border-box;
+    border-right: 1px dotted rgba(255, 255, 255, 0.15);
 }
 
 div#portrait-container>img {
@@ -475,7 +496,7 @@ div#about-img-container-text {
 p#my-name {
     display: inline-block;
     color: #E6E6E6;
-    background-color: #000;
+    /*background-color: #000;*/
     padding: 2px 5px 4px;
     margin-bottom: 6px;
     font-size: 20px;
@@ -560,7 +581,6 @@ span.highlight-contact {
 section#portfolio {
 	position: relative;
 	min-height: 100vh;
-	background-color: #fff;
 }
 
 #heading-portfolio {
@@ -576,7 +596,7 @@ section#portfolio {
     display: inline-block;
     position: fixed;
     left: 90px;
-    background: #000;
+    /*background: #000;*/
     padding: 0 13px 1px 30px;
     z-index: 13;
 }
@@ -629,19 +649,22 @@ section#portfolio {
 
 .portfolio-item {
     position: relative;
-    margin: 0;
+    margin: 0 6%;
     /*max-height: 290px;*/
     overflow: hidden;
-    padding: 100px 6% 60px;
+    padding: 100px 0 60px;
     opacity: 1;
 
-    -webkit-box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
+    /*-webkit-box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
     -moz-box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
-    box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);
+    box-shadow: 0px -19px 63px 0px rgba(0,0,0,0.27);*/
 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    box-sizing: border-box;
+    border-top: 1px dotted rgba(255, 255, 255, 0.15);
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -750,7 +773,7 @@ h3.h3-portfolio {
 a.view-project-button {
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #169E96;
+    /*background-color: #169E96;*/
     padding: 8px 15px 9px;
     font-size: 100%;
     border-radius: 4px;
@@ -759,7 +782,7 @@ a.view-project-button {
 }
 
 a.view-project-button:hover {
-	background-color: #0C0C0C;
+	/*background-color: #0C0C0C;*/
 }
 
 /* Responsive videoelements */
@@ -858,11 +881,9 @@ a.view-project-button:hover {
 /* FOOTER
 --------------------------------------------------*/
 section#bottom {
-	background-color: #000;
 }
 
 p#bottom-c {
-    background: #000;
     text-align: center;
     padding: 40px 0px;
     font-weight: 300;
@@ -984,6 +1005,11 @@ p.error-msg {
 
 /* no video for tablets */
 @media screen and (max-device-width: 800px) {
+
+    div#content {    
+        width: 90%;
+        margin: 0 auto;
+    }
 
     #bgvid {
         display: none;

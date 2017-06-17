@@ -45,7 +45,7 @@ activeMenu = function() {
 	var blue = green;
 	red = green;
 
-	$("#home, #about").css("background", "rgb(" + red + "," + green + "," + blue + ")");
+	$("#fixed-bg").css("background", "rgb(" + red + "," + green + "," + blue + ")");
 	$("#fullwidth-text, .h4-home").css("color", "rgb(" + slow + "," + slow + "," + slow + ")");
 
 	// Active class on scroll
@@ -363,6 +363,41 @@ window.addEventListener('resize', function() {
 });
 
 
+/* Them fishes *********************************************************/
+$(function() {
+	// Random position for fishes
+	var fishes = $('.random-fish');
+	for(var i = 0; i < fishes.length; i++) {
+		var top = Math.floor(Math.random() * $(window).height());
+		var left = Math.floor(Math.random() * $(window).width() - (fishes[i].offsetWidth / 2));
+		fishes[i].style.top = top + 'px';
+		fishes[i].style.left = left + 'px';
+	}
 
+	// Move fishes in different speed up n' down on scroll
+	$(window).on('mousewheel', function(e) {
+		var fishes = $('.random-fish');
+		var windowHeight = $(window).height();
+		var speed = 1;
+		for(var i = 0; i < fishes.length; i++) {
+			var negativeElHeight = -Math.abs(fishes[i].offsetHeight);
+			var positiveElHeight = Math.abs(fishes[i].offsetHeight);
+			var top = fishes[i].style.top;
+			top = parseInt(top.replace('px', ''));
+			if(top < negativeElHeight) {
+				fishes[i].style.top = windowHeight + positiveElHeight + 'px';
+						} else if(top > (windowHeight + positiveElHeight)) {
+				fishes[i].style.top = negativeElHeight + 'px';
+			} else {
+				if(e.originalEvent.wheelDelta > 0) {
+					fishes[i].style.top = top - speed + 'px';
+				} else {
+					fishes[i].style.top = top + speed + 'px';
+				}
+			}
+			speed++;
+		}
+	});	
+});
 
 

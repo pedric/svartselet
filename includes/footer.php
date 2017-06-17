@@ -26,5 +26,16 @@
 	<!--<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Fixed bg -->
+	<div id="fixed-bg"></div>
+
+	<div class="random-fish" style="background-image:url('img/fish/1.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/2.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/3.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/4.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/5.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/6.png');"></div>
+
 </body>
 </html>
