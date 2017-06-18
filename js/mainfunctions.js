@@ -379,23 +379,29 @@ $(function() {
 		var fishes = $('.random-fish');
 		var windowHeight = $(window).height();
 		var speed = 1;
-		for(var i = 0; i < fishes.length; i++) {
-			var negativeElHeight = -Math.abs(fishes[i].offsetHeight);
-			var positiveElHeight = Math.abs(fishes[i].offsetHeight);
-			var top = fishes[i].style.top;
-			top = parseInt(top.replace('px', ''));
-			if(top < negativeElHeight) {
-				fishes[i].style.top = windowHeight + positiveElHeight + 'px';
-						} else if(top > (windowHeight + positiveElHeight)) {
-				fishes[i].style.top = negativeElHeight + 'px';
-			} else {
-				if(e.originalEvent.wheelDelta > 0) {
-					fishes[i].style.top = top - speed + 'px';
+
+		if($(document).scrollTop() < windowHeight / 2) {
+
+			for(var i = 0; i < fishes.length; i++) {
+				var negativeElHeight = -Math.abs(fishes[i].offsetHeight);
+				var positiveElHeight = Math.abs(fishes[i].offsetHeight);
+				var top = fishes[i].style.top;
+				top = parseInt(top.replace('px', ''));
+				if(top < negativeElHeight) {
+					fishes[i].style.top = windowHeight + positiveElHeight + 'px';
+							} else if(top > (windowHeight + positiveElHeight)) {
+					fishes[i].style.top = negativeElHeight + 'px';
 				} else {
-					fishes[i].style.top = top + speed + 'px';
+					if(e.originalEvent.wheelDelta > 0) {
+						fishes[i].style.top = top - speed + 'px';
+					} else {
+						fishes[i].style.top = top + speed + 'px';
+					}
 				}
+				speed++;
 			}
-			speed++;
+		} else {
+			$('.random-fish').animate({ 'opacity': 0 }, 3000);
 		}
 	});	
 });
