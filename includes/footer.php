@@ -30,12 +30,12 @@
 	<!-- Fixed bg -->
 	<div id="fixed-bg"></div>
 
-	<div class="random-fish" style="background-image:url('img/fish/1.png');"></div>
+<!-- 	<div class="random-fish" style="background-image:url('img/fish/1.png');"></div>
 	<div class="random-fish" style="background-image:url('img/fish/2.png');"></div>
 	<div class="random-fish" style="background-image:url('img/fish/3.png');"></div>
 	<div class="random-fish" style="background-image:url('img/fish/4.png');"></div>
 	<div class="random-fish" style="background-image:url('img/fish/5.png');"></div>
-	<div class="random-fish" style="background-image:url('img/fish/6.png');"></div>
+	<div class="random-fish" style="background-image:url('img/fish/6.png');"></div> -->
 
 </body>
 </html>
